@@ -64,10 +64,7 @@ class ziyaret(Resource):
                 #sonuc dondurulmesi
                 return mesaj,200
 
-class statikmatris(Resource):
-        def get(self):
-                matris = [[10,30,124,90,70],[5,77,54,200,44],[182,184,50,12,99]]
-                return matris,200
+
 
 # Add URL endpoints
 #api.add_resource(Users, '/users')
@@ -75,7 +72,7 @@ class statikmatris(Resource):
 #api.add_resource(Name, '/<string:name>')
 
 api.add_resource(ziyaret,'/ziyaret')
-api.add_resource(statikmatris,'/statikmatris')
+
 
 
 if __name__ == '__main__':
